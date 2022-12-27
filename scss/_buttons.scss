@@ -1,0 +1,41 @@
+.btn-primary{
+    background-color: $brand-yellow;
+    color: #855B35;
+    transition: background-color .3s;
+    &:hover{
+        background-color: #FFDC5C;
+    }
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border: 1px solid $brand-light-blue;
+    color: $brand-light-blue;
+    transition: all .3s;
+    &:hover{
+        color: white;
+        background-color: $brand-light-blue;
+    }
+}
+
+.btn-primary,
+.btn-secondary{
+    display: inline-block; /* Ter mais liberdade de dar altura e largura */
+    padding: 0 2.6rem;
+    border-radius: 122px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 4.8rem; /* Texto ficar centralizado no botão, vai ser a margem vertical */
+    text-align: center;
+
+    &.white{
+        border: 1px solid white;
+        color: white;
+        background-color: transparent;
+        &:hover{
+            color: $brand-green-light;
+            background-color: white;
+    }
+}
+}

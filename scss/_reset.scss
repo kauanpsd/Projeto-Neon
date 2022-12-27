@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Tirar as boliinhas das listas */
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box; /* tirar a somatoria do padding no tamanho total da box */
+    font-family: 'Inter', sans-serif;
+}
+
+img{
+    max-width: 100%; /* Deixar a imagem responsiva */
+    display: block; /*  */
+}
+
+html{
+    font-size: 62.5%; /* deixar 1rem = 10px  para poder usar rem ao invés de px*/
+}
+
+html,
+body{
+    overflow-x: hidden; /* Evita o scroll lateral, ela deixa os elementos vazarem para fora da tela */
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}

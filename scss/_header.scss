@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    position: absolute; /* Vai ficar por cima da section hero com o fundo transparente. */
+    top: 0;/* Vai forçar  o header não sair para fora da página */
+    left: 0;/* Vai forçar  o header não sair para fora da página */
+    width: 100%; /* Vai fazer o header ocupar 100% da página */
+    height: 7.8rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.219);
+    
+    .container{
+        @include flex(row, center, space-between);
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            align-items: center;
+            margin-right: 5.9rem;
+            li{
+                &:not(:first-child){
+                    margin-left: 4.8rem;
+                }
+
+                a{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    line-height: 125%;
+                    color: #FFFFFF;
+                    transition: color .3s;
+                    &:hover {
+                        color: $brand-yellow;
+                    }
+                }
+
+            }
+        }
+    }
+}

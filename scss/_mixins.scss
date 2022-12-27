@@ -1,0 +1,14 @@
+@mixin flex($direction, $align, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+/* MEDIA QUERY */
+
+@mixin responsive($screenWidth) { 
+    @media (max-width: $screenWidth) {
+        @content;
+    }
+}
